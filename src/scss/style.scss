@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    background-color: #E6EFF8 !important;
+    font-family: 'Karla', sans-serif;
+}
+
+
+.bg-top h2 {
+    color: #2ABBB3 !important;
+    font-weight: 700;
+    margin-bottom: 0.8em;
+}
+
+.bg-top h3 {
+    color: #C1DE34 !important;
+    font-weight: 700;
+    margin-bottom: 0.5em;   
+}
+
+.bg-top p {
+    color: #b9b9b9;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 0.3em;
+}
+
+.container {
+    max-width: 1128px !important;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.box {
+    background-color: white;
+    width: 800px;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 0 0 1.5em #b1b9c0;
+}
+
+.bg-bottom-left {
+    background-color: #2BB2AE;
+    color: white;
+    border-radius: 0 0 0 15px;
+    height: 340px;
+    & h4 {
+        margin-bottom: 1em;
+    }
+    & p {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 0.2em;
+        &.money {
+            font-size: 30pt;
+        }
+    }
+    & span {
+        font-size: 18px;
+        opacity: 0.6;
+    }
+}
+
+.bg-bottom-right {
+    background-color: #50BEBD;
+    color: white;
+    border-radius: 0 0 15px 0;
+    height: 340px;
+    & h4 {
+        margin-bottom: 1em;
+    }
+    & p {
+        font-weight: 500;
+        font-size: 18px;
+        opacity: 0.7;
+        padding-right: 70px;
+    }
+  
+}
+
+button {
+    width: 100%;
+    background-color: #C1DE34;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px !important;
+    padding: 15px 0;
+    box-shadow: 0 0 0.3em #879b22;
+    cursor: pointer;
+    &:hover {
+        background-color: #a1b925;
+        box-shadow: 0 0 0.6em #879b22;    
+    }
+}
+
+.attribution { 
+    font-size: 16px; 
+    text-align: center;
+    color: #2BB2AE;
+    font-weight: 700; 
+    & a {
+        text-decoration: none;
+        color: #C1DE34;
+        &:hover {
+            text-decoration: none;
+            color: #a1b925;
+        }
+    } 
+}
+
+@media(max-width:768px) {
+
+    .container {
+        height: 100%;
+        padding: 2.4em;
+    }
+
+    .box {
+        height: auto;
+    }
+
+    .bg-bottom-left {
+        border-radius: 0;      
+    } 
+    
+    .bg-bottom-right {
+        border-radius: 0 0 15px 15px;
+        & p {
+            padding-right: 0;
+        } 
+    }
+    
+}
